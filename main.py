@@ -2,7 +2,7 @@ import requests
 import bs4
 import lxml
 import csv
-b=input("Enter site to review")
+b=input("Enter site to scrape from")
 f=0
 h=requests.get(b)
 s=bs4.BeautifulSoup(h.text,'lxml')
